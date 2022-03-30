@@ -1,7 +1,8 @@
 <html>
 <head>
 <title>My Document</title>
-<script type="text/javascript"> function change() {
+<script type="text/javascript">
+function change() {
     var header = document.getElementById("H1");
     header.innerHTML = "CSIE@CGU";
     var para = document.getElementById("p1");

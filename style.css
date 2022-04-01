@@ -1,3 +1,60 @@
-html {
-    background-color: #00539F;
+body {
+    background-color: #f0f7b3;
+}
+.red{
+    color : rgb(241, 44, 44);
+}
+.blue{
+    color :rgb(44, 47, 241);
+}
+.purple{
+    color :rgb(174, 75, 240);
+}
+.green{
+    color :rgb(13, 110, 34);
+}
+.yellow{
+    color:rgb(202, 133, 5)
+}
+
+.box1 {
+    height: 80px;
+    background: rgb(157, 247, 157);
+    text-align: center;
+}
+
+@media(min-width: 400px) {
+    p{
+        font-size: 10px;
+    }
+    .box1 {
+        background: rgb(133, 215, 247);
+    }
+}
+
+@media(min-width: 540px) {
+    p{
+        font-size: 13px;
+    }
+    .box1 {
+        background: rgb(252, 252, 145);
+    }
+}
+
+@media(min-width: 768px) {
+    p{
+        font-size: 15px;
+    }
+    .box1 {
+        background: rgb(238, 173, 76);
+    }
+}
+
+@media(min-width: 920px) {
+    p{
+        font-size: 16px;
+    }
+    .box1 {
+        background: rgb(252, 173, 185);
+    }
 }

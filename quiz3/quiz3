@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>My Document</title>
+    <script type="text/javascript">
+        var str = '內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容';
+        var i = 0;
+        function typing() {
+            var divTyping = document.getElementById('typing');
+            if (i <= str.length) {
+                divTyping.innerHTML = str.slice(0, i);
+                setTimeout('typing()', 200);
+            }
+            else {
+                divTyping.innerHTML = str;
+            }
+        }
+        typing();
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Change this document." onclick="change()">
+    <h1 id="H1">CGU</h1>
+    <p id="p1">好棒棒</p>
+    <div id="typing"></div>
+</body>
+</head>
+
+</html>
+
+//document.addEventListener('keydown', logKey);
+var str = '內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容';
+var i = 0;
+function typing() {
+    var divTyping = document.getElementById('typing');
+    if (i <= str.length) {
+        divTyping.innerHTML = str.slice(0, i);
+        setTimeout('typing()', 200);
+    }
+    else {
+        divTyping.innerHTML = str;
+    }
+}
+typing();

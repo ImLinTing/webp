@@ -18,7 +18,13 @@ function createCode() {
     let word = gettime() * 1.5;
     for (s; s < word - s; s++) {
         for (let i = 0; i < 6; i++) {
-            num[i] = Math.floor(Math.random() * 26);
+            if (word > 0) {
+                num[i] = Math.floor(Math.random() * 26);
+            }
+            else {
+                break;
+            }
+            word--;
         }
         for (let i = 0; i < 6; i++) {
             let newCode = document.createElement("img");

@@ -14,6 +14,9 @@ $(document).ready(function () {
         //2.顯示json 在網頁上
 
         var i = 1;
+        let newCode = document.createElement("img");
+        newCode.src = "down.png";
+
         $.ajax({
             type: 'GET',
             url: 'https://ptx.transportdata.tw/MOTC/v2/Rail/Metro/ODFare/TYMC?%24top=420&%24format=JSON',
@@ -25,8 +28,14 @@ $(document).ready(function () {
                             $('<li>',
                                 {
                                     text: [i] + '. ' + element.OriginStationName.Zh_tw
-                                        + ' 往 ' + element.DestinationStationName.Zh_tw + " : "
-                                        + element.TravelTime + '分鐘 , 票價 : ' + element.Fares[0].Price + '元'
+                                }),
+                            $('<li>',
+                                {
+                                    text: '⇩' + element.TravelTime + '分鐘 , 票價 : ' + element.Fares[0].Price + '元'
+                                }),
+                            $('<li>',
+                                {
+                                    text: element.DestinationStationName.Zh_tw
                                 }),
                             $('<p>')
                         );

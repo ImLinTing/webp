@@ -31,7 +31,7 @@ $(document).ready(function () {
                                 }),
                             $('<li>',
                                 {
-                                    text: '⇩' + element.TravelTime + '分鐘 , 票價 : ' + element.Fares[0].Price + '元'
+                                    text: ' ⇩ 耗時 : ' + element.TravelTime + '分鐘 , 票價 : ' + element.Fares[0].Price + '元'
                                 }),
                             $('<li>',
                                 {

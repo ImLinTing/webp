@@ -27,18 +27,23 @@ $(document).ready(function () {
                         $('.info').append(
                             $('<li>',
                                 {
-                                    text: [i] + '. ' + element.OriginStationName.Zh_tw
+                                    text: ' 【 A ' + [i] + ' : ' + element.OriginStationName.Zh_tw + ' 】 '
                                 }),
+                            $('<br>'),
                             $('<li>',
                                 {
                                     text: ' ⇩ 耗時 : ' + element.TravelTime + '分鐘 , 票價 : ' + element.Fares[0].Price + '元'
                                 }),
-                            $('<li>',
-                                {
-                                    text: element.DestinationStationName.Zh_tw
-                                }),
-                            $('<p>')
+                            $('<br>')
                         );
+                        if (index == 399) {
+                            $('.info').append(
+                                $('<li>',
+                                    {
+                                        text: ' 【 A ' + [i + 1] + ' : ' + element.DestinationStationName.Zh_tw + ' 】 '
+                                    })
+                            );
+                        }
                         i++;
                         console.log(index);//debug 用
                     }

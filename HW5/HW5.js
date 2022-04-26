@@ -14,8 +14,6 @@ $(document).ready(function () {
         //2.顯示json 在網頁上
 
         var i = 1;
-        let newCode = document.createElement("img");
-        newCode.src = "down.png";
 
         $.ajax({
             type: 'GET',

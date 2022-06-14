@@ -1,0 +1,11 @@
+.main-area{
+    display: flex;
+}
+.user-container{
+    width: 70%;
+    margin-left: 40px;
+}
+.total-container {
+    margin-left: 40px;
+    color: indigo;
+}
